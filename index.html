@@ -7,12 +7,11 @@
   <title>My Portofolio</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link href="https://cdn.jsdelivr.net/npm/daisyui@2.31.0/dist/full.css" rel="stylesheet" type="text/css" />
-
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <!--   Navbar -->
-  <div id="home">
     <div class="navbar bg-base-100">
       <div class="navbar-start">
         <div class="dropdown">
@@ -25,13 +24,14 @@
           <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
             <li><a href="#home">Home</a></li>
             <li><a href="#about"">About Me</a></li>
+            <li><a href="#experience"">Experience</a></li>
           <li><a href=" #portfolio"">Portfolio</a></li>
             <li><a href="#contact"">Contacts</a></li>
         </ul>
       </div>
     </div>
     <div class=" navbar-center">
-                <a class="btn btn-ghost normal-case text-xl">FransiskusAdi</a>
+            <a class="btn btn-ghost normal-case text-xl">FransiskusAdi</a>
         </div>
         <div class="navbar-end">
           <button class="btn btn-ghost btn-circle">
@@ -48,6 +48,8 @@
       </div>
 
       <!--   Content-1 -->
+      <div id="home">
+      <div class="container">
       <div class="hero min-h-screen">
         <div class="hero-content text-center">
           <div class="max-w-5xl">
@@ -62,82 +64,51 @@
         </div>
       </div>
     </div>
+    </div>
   
 
     <!--   Content-2 (About) -->
-    <div id="about">
-      <div class="hero min-h-screen">
-        <div class="card card-side bg-base-100 shadow-xl">
-        <div class="hero-content text-left">
-          <div class="max-w-6xl">
-            <div class="about-page p-5">
-              <h1 class="font-bold text-5xl">About Me</h1>
-              <p class="py-6 text-lg">Hello, my name is Fransiskus Adi Dharmawan. You can call me Frans, I'm a 3rd-year
-                student at
-                Binus University. I am very interested in the world of programming, especially in the field of interface
-                design and website development. On this page, you will know more about me and my portfolio. I hope we
-                can
-                get to know each other better after this.</p>
-
-              <div class="experience">
-                <h1 class="text-3xl font-medium">Experience</h1>
-                <div class="exp-desc pt-2">
-                  <div class="exp-container max-w-lg">
-                    <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
-                      <div class="collapse-title text-xl font-medium">
-                        <h1 class="font-medium text-xl">Himti Web Development Division</h1>
-                      </div>
-                      <div class="collapse-content">
-                        <p class="font-bold">2021</p>
-                        <p>I joined HIMTI, in March 2021, in this organization I entered the website development
-                          division. In
-                          this division, I learned many things, such as HTML, CSS, JS, Bootstrap, Tailwind, etc. Here, I
-                          am
-                          also a team in the development of the HIMTI website and also the election website HIMTI
-                          chairman.
-                        </p>
-                      </div>
-                    </div>
+    <div id="about" class="about">
+      <div class="container">
+        <div class="hero min-h-screen">
+          <div class="hero-content text-left">
+            <div class="max-w-none">
+              <h1 class="text-5xl font-bold">About Me</h1>
+              <div class="about-desc">
+              <p class="py-6">Hello, my name is Fransiskus Adi Dharmawan. You can call me Frans, I'm a 3rd-year student at Binus University. I am very interested in the world of programming, especially in the field of interface design and website development. On this page, you will know more about me and my portfolio. I hope we can get to know each other better after this.</p>
+            </div>
+            <div class="experience">
+              <h1 class="text-3xl font-bold pb-5">My Experience</h1>
+              <div class="experiences w-full">
+              <div class="exp-desc min">
+                <button type="button" class="collapsible text-xl font-medium">HIMTI Web Development Division<ion-icon name="chevron-down-outline" style="float: right;"></ion-icon></button>
+                  <div class="exp-content text-left">
+                    <p>I joined HIMTI, in March 2021, in this organization I entered the website development division. In this division, I learned many things, such as HTML, CSS, JS, Bootstrap, Tailwind, etc. Here, I am also a team in the development of the HIMTI website and also the election website HIMTI chairman.</p>
                   </div>
-                  <div class="exp-container max-w-lg">
-                    <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
-                      <div class="collapse-title text-xl font-medium">
-                        <h1 class="font-medium text-xl">Eben Haezer IT Team</h1>
-                      </div>
-                      <div class="collapse-content">
-                        <p class="font-bold">2022</p>
-                        <p>Eben Haezer IT Team is a team that was established to create a website that will later help
-                          improve
-                          SMEs in GKJ Eben Haezer. For now, the website is still under development and will be available
-                          in
-                          the next few months.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="exp-container max-w-lg">
-                    <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
-                      <div class="collapse-title text-xl font-medium">
-                        <h1 class="font-medium text-xl">Udemy Web Developer Bootcamp</h1>
-                      </div>
-                      <div class="collapse-content">
-                        <p class="font-bold">2022</p>
-                        <p>I attended a website development Bootcamp held by Udemy. The Bootcamp provided is in the form
-                          of online learning through videos and there are also exercises as practice media. This
-                          Bootcamp taught me how to create a website from scratch until it was finally launched.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
+              <div class="exp-desc">
+                <button type="button" class="collapsible text-xl font-medium">GKJ Eben Haezer IT Team<ion-icon name="chevron-down-outline" style="float: right;"></ion-icon></button>
+                  <div class="exp-content text-left">
+                    <p>Eben Haezer IT Team is a team that was established to create a website that will later help improve SMEs in GKJ Eben Haezer. For now, the website is still under development and will be available in the next few months.</p>
+                  </div>
+              </div>
+              <div class="exp-desc">
+                <button type="button" class="collapsible text-xl font-medium">Udemy Web Developer Bootcamp<ion-icon name="chevron-down-outline" style="float: right;"></ion-icon></button>
+                  <div class="exp-content text-left">
+                    <p>I attended a website development Bootcamp held by Udemy. The Bootcamp provided is in the form of online learning through videos and there are also exercises as practice media. This Bootcamp taught me how to create a website from scratch until it was finally launched.</p>
+                  </div>
+              </div>
+            </div>
             </div>
           </div>
         </div>
-      </div>
-      </div>
     </div>
+    </div>
+</div>
 
-    <!--   Content-3 Portfolio -->
+    <!--   Content-4 Portfolio -->
     <div id="portfolio">
+      <div class="container">
       <div class="hero min-h-fit">
         <div class="hero-content text-left">
           <div class="max-w-6xl">
@@ -196,9 +167,12 @@
           </div>
         </div>
       </div>
+      </div>
     </div>
-    <!--   Content-4 Contact Us -->
+
+    <!--   Content-5 Contact Us -->
     <div id="contact">
+      <div class="container">
       <div class="hero min-h-screen">
         <div class="card card-side bg-base-100 shadow-xl">
         <div class="hero-content flex-col lg:flex-row-reverse">
@@ -222,6 +196,8 @@
       </div>
       </div>
     </div>
+    </div>
+
     <!--   Footer -->
 
     <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded">

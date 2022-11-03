@@ -1,6 +1,10 @@
-html, body {
-  height: 100%;
-  width: 100%;
+*{
+  box-sizing: border-box;
+}
+
+body {
+  /* height: 100%;
+  width: 100%; */
 /* background-image: linear-gradient(to right, #D4FFEC 0%, #57F2CC 48%, #4596FB 100%); */
 /* background-image: linear-gradient(to right, #434343 0%, black 100%); */
 /* background-image: linear-gradient(to right, #29323c 0%, #485563 100%); */
@@ -8,10 +12,17 @@ html, body {
 background: -webkit-linear-gradient(to right, #414345, #232526);  
 background: linear-gradient(to right, #414345, #232526); */
 background: #536976;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: -webkit-linear-gradient(to right, #292E49, #536976);
+background: linear-gradient(to right, #292E49, #536976);
+font-family:'Montserrat', sans-serif;
+margin: 0;
+}
 
-
+.container{
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .navbar{
@@ -28,14 +39,40 @@ ion-icon{
   font-size: 28px;
 }
 
-/* .hero{
-  padding-top:-50px;
-} */
+.about{
+  padding: 0 80px;
+  text-align: center;
+  background-color:white;
+  color: black;
+}
 
-.exp-container{
-  display: flex;
-  flex-direction: row;
-  padding: 5px;
+.collapsible{
+  background-color:rgb(71, 91, 107, 1) !important;
+  color:white;
+  cursor:pointer;
+  padding:20px;
+  width:100%;
+  border: none;
+  border-radius: 5px;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: rgba(134, 134, 134, 0.5);
+}
+
+.exp-desc{
+  padding-top:10px;
+}
+
+.exp-content {
+  padding: 10px 20px;
+  width: 100%;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
 }
 
 .portfolio-desc{
